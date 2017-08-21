@@ -41,6 +41,8 @@
                     this.title = title
                     this.path = path
                     this.text = text
+                    
+                    this.preview()
                 })
                 this.$electron.ipcRenderer.on("get-filePath",(event,res)=>{
                     this.path = res[0]
