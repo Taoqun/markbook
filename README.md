@@ -3,7 +3,6 @@
 > An electron-vue project
 
 #### Build Setup
->>>>>>> 完成测试版
 
 ``` bash
 # install dependencies
