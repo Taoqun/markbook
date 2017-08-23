@@ -41,7 +41,7 @@
                     this.title = title
                     this.path = path
                     this.text = text
-                    
+
                     this.preview()
                 })
                 this.$electron.ipcRenderer.on("get-filePath",(event,res)=>{
@@ -93,10 +93,10 @@
                             return
                         }
                         this.$notify({
-                          title: '保存成功',
-                          message: `${this.title}保存成功！`,
-                          type: 'success',
-                          duration:800,
+                            title: '保存成功',
+                            message: `${this.title}保存成功！`,
+                            type: 'success',
+                            duration:800,
                         });
                     })
                 }
@@ -137,6 +137,7 @@
 
 <style lang="scss">
     .text-resource-wrap{
+        font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
         flex-grow:1;
         display: flex;
         flex-direction: column;
