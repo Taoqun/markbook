@@ -55,7 +55,8 @@
                 this.preview()
             },
             preview(){
-                this.html = this.parse.makeHtml(this.text)
+                let source = this.text
+                this.html = this.parse.makeHtml(source)
             },
             decideFile(){
                 if( event.keyCode === 83 && (event.ctrlKey || event.metaKey ) ){
@@ -141,7 +142,6 @@
         flex-grow:1;
         display: flex;
         flex-direction: column;
-        max-width:80vw;
         border-left:1px solid #324057;
 
         .text-title-list{
